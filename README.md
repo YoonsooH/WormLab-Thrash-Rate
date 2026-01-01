@@ -60,7 +60,8 @@ If your data does not originate from WormLab, follow these modifications:
 These are data collected for an experiment that investigated the effects of morphine in *cat-2* and *dat-1* loss-of-function *C. elegans* mutants.
 * VG1049 corresponds to *cat-2* loss-of-function mutants
 * VG1038 corresponds to *dat-1* loss-of-function mutants
-* XMN1408 corresponds to wild-type *C. elegans*.
+* XMN1408 corresponds to wild-type *C. elegans*
+
 For more information, reach out to me: yoonsoo.ham@proton.me or yoonsooham04@gmail.com
 
 Download the data [here](https://osf.io/vekwu/overview?view_only=ef160fafa6214887a3f191d230455bb3). All the .csv files can be placed
