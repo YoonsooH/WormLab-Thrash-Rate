@@ -2,7 +2,7 @@ Uses the body bending angle data of worms to calculate the thrashing rate (in th
 Code is optimized to work best with WormLab (MBF Biosciences) outputs. If your data is not from WormLab, ensure the data formats are compatible with the code. See 'required format'.
 
 Installation
-Scripts are primarily written in R. Ensure R is installed. No packages are necessary.
+Ensure R is installed. No packages are necessary. Download this repository with a preferred method.
 
 Usage
 Download the repository, place the raw data file (see 'required format') in the 'Worm_data' directory.
