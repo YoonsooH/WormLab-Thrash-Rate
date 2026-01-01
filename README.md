@@ -51,7 +51,7 @@ If your data does not originate from WormLab, follow these modifications:
 ## Technical Specifications
 * **Optimized Frame Rate:** 30 frames per second (fps).
 * **Data Duration:** 1-minute worth of data per file.
-* **Performance Benchmark:** A dataset of ~875 files (~163.4 MB) typically takes **48 minutes** to process.
+* **Performance Benchmark:** A dataset of ~875 files (~163.4 MB) typically takes **2 minutes** to process.
 
 ---
 
