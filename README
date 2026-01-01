@@ -1,0 +1,31 @@
+Uses the body bending angle data of worms to calculate the thrashing rate (in thrashes/minute), given that data matches the required format and is from 1-minute worth of data.
+Code is optimized to work best with WormLab (MBF Biosciences) outputs. If your data is not from WormLab, ensure the data formats are compatible with the code. See 'required format'.
+
+Installation
+Scripts are primarily written in R. Ensure R is installed. No packages are necessary.
+
+Usage
+Download the repository, place the raw data file (see 'required format') in the 'Worm_data' directory.
+Run wormlabtr.sh.
+Outputs will be stored in the 'Worm_output' directory.
+Note for non-WormLab outputs
+If using the non-WormLab .csv file, remove the 'Rscript R_scripts/BAMP1_Cleaner.R' in wormlabtr.sh. 
+Then, create a directory called '1 Cleaned' inside the 'Worm_output' directory. Place all the data files within the '1 Cleaned' directory.
+Finally, run the wormlabtr.sh as normal.
+
+Raw Data Format
+File nomenclature
+Ensure that the name of the file contains the following string of characters while not using the '_' character elsewhere:
+<EXP GROUP>_<STRAIN>_<REPLICATE NUMBER>_<TIME ID>.csv_Bending Angle - Mid-Point.csv
+For example:
+M9_VG1038_1_1.csv_Bending Angle - Mid-Point.csv
+The '.csv' string is repeated twice in the example. This is intentional.
+File content
+If using WormLab outputs, do not modify any default configurations when saving the .csv file. Keep the file headers and other supplementary information for good measure.
+If not using WormLab outputs, ensure that the provided .csv file contains at least 2 columns for timekeeping and at least 1 column for bending angle data. At minimum, your data should contain the following columns:
+Frame | Time | 1 |
+With the '1' column being a 'track' column containing numerical data of the body bending angle. There is no upper limit to how many track columns may be in the data file.
+
+Other information
+This pipeline is optimized for WormLab outputs recorded with a camera running at 30 frames per second.
+For a dataset containing 875 files at 1-minute worth of data in 30 frames per second (~163.4 MB), this pipeline is known to take approximately 50 minutes to complete.
