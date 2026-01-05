@@ -52,6 +52,8 @@ If your data does not originate from WormLab, follow these modifications:
 * **Optimized Frame Rate:** 30 frames per second (fps).
 * **Data Duration:** 1-minute worth of data per file.
 * **Performance Benchmark:** A dataset of ~875 files (~163.4 MB) typically takes **2 minutes** to process.
+    * Performance test conducted with UBC ARC Sockeye. 
+    * *Specifications used*: 1 node, 1 task, 1 cpu/task, 2 GB of memory
 
 ---
 
