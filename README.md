@@ -44,7 +44,7 @@ If your data does not originate from WormLab, follow these modifications:
 * **Non-WormLab Users:** Ensure your `.csv` contains at least these columns:
     * `Frame`: Sequence of frames.
     * `Time`: Timekeeping data.
-    * `1`: A "track" column containing numerical data of the body bending angle. (Additional numerical columns for multiple tracks are supported).
+    * `1`: A "track" column containing numerical data of the body bending angle. (Additional numerical columns for multiple tracks is supported).
 
 ---
 
