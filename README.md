@@ -54,6 +54,8 @@ If your data does not originate from WormLab, follow these modifications:
 * **Performance Benchmark:** A dataset of ~875 files (~163.4 MB) typically takes **2 minutes** to process.
     * Performance test conducted with UBC ARC Sockeye. 
     * **Specifications used**: 1 node, 1 task, 1 cpu/task, 2 GB of memory
+* **Written in base R for performance**
+    * Original scripts were written in R with numerous libraries. The scripts in this page are translated from the non-base R scripts. For more readable scripts, reach out to me for the non-base R scripts.
 
 ---
 
